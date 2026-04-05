@@ -91,33 +91,33 @@ export function BentoPricing() {
         </div>
         <div className="flex items-center gap-3 p-3">
           <Badge variant="secondary" className="bg-white/10 text-white border-white/20 font-open-sans-custom text-xs">
-            ПРЕМИУМ
+            СЕЗОН 1–2 (2006–2007)
           </Badge>
           <Badge
             variant="outline"
             className="hidden lg:flex bg-white/5 text-white border-white/20 font-open-sans-custom text-xs"
           >
-            <SparklesIcon className="me-1 size-3" /> Популярный
+            <SparklesIcon className="me-1 size-3" /> Легендарный старт
           </Badge>
           <div className="ml-auto">
             <Button size="sm" className="bg-white text-black hover:bg-gray-100 font-open-sans-custom text-xs">
-              Подписаться
+              Смотреть
             </Button>
           </div>
         </div>
         <div className="flex flex-col p-3 lg:flex-row">
           <div className="pb-2 lg:w-[30%]">
             <span className="font-mono text-3xl font-semibold tracking-tight text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)]">
-              2 000 ₽
+              24
             </span>
-            <span className="text-gray-300 text-xs font-open-sans-custom">/мес</span>
+            <span className="text-gray-300 text-xs font-open-sans-custom"> эпизода</span>
           </div>
           <ul className="text-gray-300 grid gap-2 text-xs lg:w-[70%] font-open-sans-custom">
             {[
-              "2 000 ₽ кредитов включено ежемесячно",
-              "Докупайте кредиты сверх месячного лимита",
-              "5x увеличенный лимит вложений",
-              "Импорт дизайнов из популярных инструментов",
+              "Сезон 1: Брайан Мозер — «Убийца с ледяным грузовиком», главный антагонист и брат Декстера",
+              "Декстер впервые узнаёт правду о своём прошлом и семье",
+              "Сезон 2: тайное место захоронений Декстера обнаружено — охота на «Тёмного защитника»",
+              "Появление Лайлы — загадочной женщины, познающей тёмную сторону Декстера",
             ].map((f, i) => (
               <li key={i} className="flex items-center gap-2">
                 <Check className="w-[1.05rem] h-[1.05rem] text-white flex-shrink-0" strokeWidth={3} />
@@ -129,50 +129,55 @@ export function BentoPricing() {
       </div>
 
       <PricingCard
-        titleBadge="СТАРТ"
-        priceLabel="0 ₽"
+        titleBadge="СЕЗОН 3–4 (2008–2009)"
+        priceLabel="24"
+        priceSuffix=" эп."
         features={[
-          "500 ₽ кредитов включено ежемесячно",
-          "Деплой приложений в облако",
-          "Визуальное редактирование",
-          "Синхронизация с Git",
+          "Сезон 3: союз с помощником окружного прокурора Мигелем Пуэнте",
+          "Сезон 4: Тринити-киллер — самый страшный антагонист сериала",
+          "Роль Джона Литгоу в образе Артура Митчелла — Emmy Award",
+          "Финал 4 сезона — один из самых шокирующих в истории ТВ",
         ]}
         className="lg:col-span-3"
-        cta="Начать"
+        cta="Смотреть"
       />
 
       <PricingCard
-        titleBadge="КОМАНДА"
-        priceLabel="3 000 ₽"
-        priceSuffix="/чел/мес"
+        titleBadge="СЕЗОН 5–6 (2010–2011)"
+        priceLabel="24"
+        priceSuffix=" эп."
         features={[
-          "3 000 ₽ кредитов на участника ежемесячно",
-          "Единый биллинг и управление командой",
-          "Общие чаты и совместная работа",
+          "Сезон 5: Декстер мстит за гибель Риты, знакомится с Лумой",
+          "Сезон 6: религиозная тематика, апокалиптические убийства",
+          "Дебра Морган начинает подозревать брата в двойной жизни",
         ]}
         className="lg:col-span-4"
       />
 
       <PricingCard
-        titleBadge="БИЗНЕС"
-        priceLabel="10 000 ₽"
-        priceSuffix="/чел/мес"
-        features={["3 000 ₽ кредитов на участника ежемесячно", "Отключение обучения по умолчанию", "Полный доступ к API"]}
+        titleBadge="СЕЗОН 7–8 (2012–2013)"
+        priceLabel="24"
+        priceSuffix=" эп."
+        features={[
+          "Сезон 7: Дебра узнаёт правду о Декстере и его кодексе",
+          "Сезон 8: финальный — доктор Эвелин Фогель и «Мозговой хирург»",
+          "Трагический финал оригинального сериала (2013)",
+        ]}
         className="lg:col-span-4"
       />
 
       <PricingCard
-        titleBadge="КОРПОРАЦИЯ"
-        priceLabel="По запросу"
-        priceSuffix=""
+        titleBadge="ДЕКСТЕР: НОВАЯ КРОВЬ (2021)"
+        priceLabel="10"
+        priceSuffix=" эп."
         features={[
-          "Отключение обучения по умолчанию",
-          "SAML SSO",
-          "Приоритетный доступ",
-          "Персональная поддержка",
+          "Продолжение спустя 10 лет — Декстер живёт под именем Джим Линдси в Айрон-Лейк",
+          "Появление сына Декстера — Харрисона, ищущего отца",
+          "Финал, поставивший точку в истории Декстера Моргана",
+          "Стриминг: Paramount+",
         ]}
         className="lg:col-span-8"
-        cta="Связаться"
+        cta="Смотреть"
       />
     </div>
   )

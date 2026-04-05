@@ -159,18 +159,18 @@ export default function Index() {
           <div className="mx-auto max-w-4xl">
             <div className="text-center px-0 leading-5">
               <h1 className="mb-8 text-balance text-5xl tracking-tight text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)] md:text-6xl lg:text-8xl">
-                <span className="font-open-sans-custom not-italic">Идея.</span>{" "}
-                <span className="font-serif italic">Промпт.</span>{" "}
-                <span className="font-open-sans-custom not-italic">Результат.</span>
+                <span className="font-open-sans-custom not-italic">Dexter.</span>{" "}
+                <span className="font-serif italic">Morgan.</span>{" "}
+                <span className="font-open-sans-custom not-italic">& Brian.</span>
               </h1>
 
               <p className="mb-8 mx-auto max-w-2xl text-pretty leading-relaxed text-gray-300 [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)] font-thin font-open-sans-custom tracking-wide leading-7 text-xl">
-                дизайнер, разработчик или просто любопытный — возьми идею,{" "}
-                <span className="font-serif italic">опиши</span> её и наблюдай, как она оживает
+                Два брата. Одна кровь. Разные пути.{" "}
+                <span className="font-serif italic">Погрузитесь</span> в мрачный мир сериала Dexter — истории судебно-медицинского эксперта и серийного убийцы, чья жизнь никогда не будет прежней
               </p>
 
               <div className="flex justify-center">
-                <ShinyButton className="px-8 py-3 text-base">начать</ShinyButton>
+                <ShinyButton className="px-8 py-3 text-base">узнать больше</ShinyButton>
               </div>
             </div>
           </div>
@@ -201,11 +201,10 @@ export default function Index() {
           <div className="relative z-10 mx-auto w-full max-w-5xl">
             <div className="mx-auto mb-10 max-w-2xl text-center">
               <h1 className="text-4xl font-extrabold tracking-tight lg:text-6xl text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)] font-open-sans-custom">
-                Тарифы и цены
+                Сезоны сериала
               </h1>
               <p className="text-gray-300 mt-4 text-sm md:text-base font-open-sans-custom [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)]">
-                Выберите подходящий план. От индивидуальных авторов до корпоративных команд — гибкие
-                тарифы для вашего успеха.
+                8 сезонов. 96 эпизодов. Каждый новый сезон — новый маньяк, новая угроза и новые испытания для Декстера Моргана.
               </p>
             </div>
             <BentoPricing />
@@ -231,10 +230,10 @@ export default function Index() {
           <div className="relative z-10 mx-auto w-full max-w-7xl">
             <div className="mx-auto mb-10 max-w-2xl text-center">
               <h1 className="text-4xl font-extrabold tracking-tight lg:text-6xl text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)] font-open-sans-custom">
-                О нас
+                О сериале
               </h1>
               <p className="text-gray-300 mt-4 text-sm md:text-base font-open-sans-custom [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)]">
-                Узнайте больше о нашей миссии, видении и ценностях, которые движут нами.
+                История двух братьев, разделённых судьбой и объединённых тьмой внутри каждого из них.
               </p>
             </div>
             <AboutQuote />
@@ -258,23 +257,23 @@ export default function Index() {
 
           <div className="relative z-10 mx-auto w-full max-w-5xl mt-[5vh]">
             <ContactCard
-              title="Свяжитесь с нами"
-              description="Если у вас есть вопросы о наших услугах или нужна помощь, заполните форму. Мы стараемся отвечать в течение 1 рабочего дня."
+              title="Обсудить сериал"
+              description="Есть мысли о сериале, любимые моменты или хочешь обсудить теорию? Оставь своё сообщение — мы любим фанатов так же сильно, как Декстер любит свой кодекс."
               contactInfo={[
                 {
                   icon: MailIcon,
-                  label: "Почта",
-                  value: "hello@promptcraft.dev",
+                  label: "Email фанклуба",
+                  value: "dexter@darkdefender.com",
                 },
                 {
                   icon: PhoneIcon,
-                  label: "Телефон",
-                  value: "+7 (495) 123-45-67",
+                  label: "Горячая линия",
+                  value: "Miami Metro PD",
                 },
                 {
                   icon: MapPinIcon,
-                  label: "Адрес",
-                  value: "Москва, Россия",
+                  label: "Место действия",
+                  value: "Майами, Флорида, США",
                   className: "col-span-2",
                 },
               ]}
@@ -282,10 +281,11 @@ export default function Index() {
               <form action="" className="w-full space-y-4">
                 <div className="flex flex-col gap-2">
                   <Label className="text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)] font-open-sans-custom">
-                    Имя
+                    Ваше имя
                   </Label>
                   <Input
                     type="text"
+                    placeholder="Гарри Морган"
                     className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]"
                   />
                 </div>
@@ -295,23 +295,18 @@ export default function Index() {
                   </Label>
                   <Input
                     type="email"
+                    placeholder="dexter@miami.gov"
                     className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]"
                   />
                 </div>
                 <div className="flex flex-col gap-2">
                   <Label className="text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)] font-open-sans-custom">
-                    Телефон
+                    Ваше сообщение
                   </Label>
-                  <Input
-                    type="tel"
+                  <Textarea
+                    placeholder="Напишите что думаете о Декстере и Брайане..."
                     className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]"
                   />
-                </div>
-                <div className="flex flex-col gap-2">
-                  <Label className="text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)] font-open-sans-custom">
-                    Сообщение
-                  </Label>
-                  <Textarea className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]" />
                 </div>
                 <Button
                   className="w-full bg-white text-black hover:bg-gray-100 [text-shadow:_0_1px_2px_rgb(0_0_0_/_10%)] font-open-sans-custom"
